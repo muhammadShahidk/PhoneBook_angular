@@ -3,11 +3,13 @@
     <app-header-lay></app-header-lay>
     
     <mat-sidenav-container class="example-container">
+        <!-- sidebar -->
         <mat-sidenav #sidenav mode="side" opened class="example-sidenav" [fixedInViewport]="options.value.fixed"
             [fixedTopGap]="options.value.top" [fixedBottomGap]="options.value.bottom">
             {{options.value.fixed ? 'Fixed' : 'Non-fixed'}} Sidenav
         </mat-sidenav>
 
+        <!-- main content -->
         <mat-sidenav-content [formGroup]="options">
             <p><mat-checkbox formControlName="fixed">Fixed</mat-checkbox></p>
             <p><mat-form-field>

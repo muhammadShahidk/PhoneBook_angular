@@ -32,6 +32,7 @@ import { MatTreeModule } from '@angular/material/tree';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MainLayComponent } from './Layout/main-lay/main-lay.component';
 import { StudentPageComponent, StudentTablePageComponent } from './Pages/student-page/student-page.component';
+import { CoursesPageComponent } from './Pages/courses-page/courses-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +41,7 @@ import { StudentPageComponent, StudentTablePageComponent } from './Pages/student
     MainLayComponent,
     StudentPageComponent,
     StudentTablePageComponent,
+    CoursesPageComponent,
   ],
   imports: [
     MatIconModule,

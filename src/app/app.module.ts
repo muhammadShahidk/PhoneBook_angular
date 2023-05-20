@@ -29,9 +29,18 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTreeModule } from '@angular/material/tree';
-import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MainLayComponent } from './Layout/main-lay/main-lay.component';
+import { StudentPageComponent, StudentTablePageComponent } from './Pages/student-page/student-page.component';
 @NgModule({
-  declarations: [AppComponent, HeaderLayComponent, SidnaveLayComponent],
+  declarations: [
+    AppComponent,
+    HeaderLayComponent,
+    SidnaveLayComponent,
+    MainLayComponent,
+    StudentPageComponent,
+    StudentTablePageComponent,
+  ],
   imports: [
     MatIconModule,
     MatFormFieldModule,
@@ -59,7 +68,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     AppRoutingModule,
     MatInputModule,
     MatDialogModule,
-    MatCheckboxModule
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

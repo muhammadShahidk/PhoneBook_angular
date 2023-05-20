@@ -7,11 +7,14 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./sidnave-lay.component.css']
 })
 export class SidnaveLayComponent {
+ 
   options = this._formBuilder.group({
     bottom: 0,
     fixed: false,
     top: 0,
   });
+
+  showSideNaveFunctions = false;
 
   constructor(private _formBuilder: FormBuilder) {}
 

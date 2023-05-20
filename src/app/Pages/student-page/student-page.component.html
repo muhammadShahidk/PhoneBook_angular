@@ -1,0 +1,33 @@
+<p>student-page works!</p>
+<!-- checking the validation of class set method -->
+<mat-form-field class="example-full-width">
+    <mat-label>Add Some text</mat-label>
+    <input matInput placeholder="Ex. Pizza" type="text" [(ngModel)] = "student.name">
+  </mat-form-field>
+  
+{{student|json}}
+<!-- {{myStData | json}} -->
+
+<app-student-table-page></app-student-table-page>
+
+<h2 ><mat-icon>List</mat-icon> Student List</h2>
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let student of myStData">
+  
+      <h3 class="list-group-item-heading">{{ student.name }}</h3>
+      <p class="list-group-item-text">ID: {{ student.id }}</p>
+      <p class="list-group-item-text">Phone: {{ student.phone }}</p>
+      <p class="list-group-item-text">Address: {{ student.address }}</p>
+      <p class="list-group-item-text">Date of Birth: {{ student.dateOfBirth | date }}</p>
+  
+      <h4 class="list-group-item-heading">Courses:</h4>
+      <ul dense class="list-group">
+        <li class="list-group-item" *ngFor="let course of student.Courses">
+          {{ course.Title }}
+        </li>
+      </ul>
+  
+    </li>
+  </ul>
+  
